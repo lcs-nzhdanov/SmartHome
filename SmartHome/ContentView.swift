@@ -9,16 +9,117 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            
+            //Image(.background) HOW TO MAKE A BACKGROUND
+            
+            VStack(spacing: 0) {
+            
+                
+
+
+                ScrollView(.horizontal) {
+                    HStack {
+                        HStack {
+                            Image(systemName: "basketball")
+                                .foregroundStyle(.black)
+                                .font(.system(size: 25))
+                                .padding(.horizontal, 5)
+                            
+                            VStack {
+                                
+                                HStack {
+                                    Text("Climate")
+                                        .foregroundStyle(.black)
+                                        .bold()
+                                    
+                                    Spacer()
+                                }
+                                
+                                HStack {
+                                    Text("16.0-20.5")
+                                        .foregroundStyle(.black)
+                                    
+                                    Spacer()
+                                }
+                            }
+                        }
+                        .padding(7)
+                        .background(.white)
+                        .cornerRadius(25.0)
+                        .padding(.horizontal, 10)
+                        
+                        
+                        HStack {
+                            Image(systemName: "basketball")
+                                .foregroundStyle(.black)
+                                .font(.system(size: 25))
+                                .padding(.horizontal, 5)
+                            
+                            VStack {
+                                
+                                HStack {
+                                    Text("Climate")
+                                        .foregroundStyle(.black)
+                                        .bold()
+                                    
+                                    Spacer()
+                                }
+                                
+                                HStack {
+                                    Text("16.0-20.5")
+                                        .foregroundStyle(.black)
+                                    
+                                    Spacer()
+                                }
+                            }
+                        }
+                        .padding(7)
+                        .background(.white)
+                        .cornerRadius(25.0)
+                        
+                        
+                    }
+                }
+
+                Spacer()
+
+                
+            }
+            .navigationTitle("My Home")
+            .toolbar {
+                ToolbarItem {
+                    Button(action: { }) {
+                        Image(systemName: "waveform")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                    }
+                }
+                
+                ToolbarItem {
+                    Button(action: { }) {
+                        Image(systemName: "plus")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 10)
+                    }
+                }
+                
+                ToolbarItem {
+                    Button(action: { }) {
+                        Image(systemName: "ellipsis.circle")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                    }
+                }
+            }
+            .tint(.blue)
+            
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .preferredColorScheme(.dark)
 }
