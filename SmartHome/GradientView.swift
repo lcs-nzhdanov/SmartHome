@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GradientView: View {
-    let firstGradientColors = Gradient(colors: [Color.blue, Color.yellow])
+    let firstGradientColors = Gradient(colors: [Color.blue, Color.purple, Color.yellow])
     
     var body: some View {
         
@@ -16,8 +16,8 @@ struct GradientView: View {
             //Background
             LinearGradient(
                 gradient: firstGradientColors,
-                startPoint: .leading,
-                endPoint: .trailing
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
             )
             .ignoresSafeArea()
             
