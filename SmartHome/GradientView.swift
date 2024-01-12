@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GradientView: View {
-    let firstGradientColors = Gradient(colors: [Color.blue, Color.purple, Color.yellow])
+    let firstGradientColors = Gradient(colors: [Color.deepBlue, Color.deepPurple, Color.deepYellow])
     
     var body: some View {
         
