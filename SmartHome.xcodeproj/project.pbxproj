@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820443A22B517AD40016E444 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820443A12B517AD40016E444 /* GradientView.swift */; };
 		82120D2F2B4E3012008A9F41 /* SmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82120D2E2B4E3012008A9F41 /* SmartHomeApp.swift */; };
 		82120D312B4E3012008A9F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82120D302B4E3012008A9F41 /* ContentView.swift */; };
 		82120D332B4E3014008A9F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82120D322B4E3014008A9F41 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		820443A12B517AD40016E444 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		82120D2B2B4E3012008A9F41 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82120D2E2B4E3012008A9F41 /* SmartHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeApp.swift; sourceTree = "<group>"; };
 		82120D302B4E3012008A9F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				82120D302B4E3012008A9F41 /* ContentView.swift */,
 				82120D322B4E3014008A9F41 /* Assets.xcassets */,
 				82120D342B4E3014008A9F41 /* Preview Content */,
+				820443A12B517AD40016E444 /* GradientView.swift */,
 			);
 			path = SmartHome;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				82120D312B4E3012008A9F41 /* ContentView.swift in Sources */,
 				82120D2F2B4E3012008A9F41 /* SmartHomeApp.swift in Sources */,
+				820443A22B517AD40016E444 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

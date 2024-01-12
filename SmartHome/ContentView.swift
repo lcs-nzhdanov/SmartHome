@@ -9,112 +9,124 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
+        ZStack {
+            //Background
+            LinearGradient(
+                gradient: Gradient(colors: [Color.red, Color.blue]),
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+            .ignoresSafeArea()
             
-            //Image(.background) HOW TO MAKE A BACKGROUND
             
-            VStack(spacing: 0) {
-            
+            //Foreground
+            NavigationStack {
                 
+                //Image(.background) HOW TO MAKE A BACKGROUND
+                
+                VStack(spacing: 0) {
+                
+                    
 
 
-                ScrollView(.horizontal) {
-                    HStack {
+                    ScrollView(.horizontal) {
                         HStack {
-                            Image(systemName: "basketball")
-                                .foregroundStyle(.black)
-                                .font(.system(size: 25))
-                                .padding(.horizontal, 5)
-                            
-                            VStack {
+                            HStack {
+                                Image(systemName: "basketball")
+                                    .foregroundStyle(.black)
+                                    .font(.system(size: 25))
+                                    .padding(.horizontal, 5)
                                 
-                                HStack {
-                                    Text("Climate")
-                                        .foregroundStyle(.black)
-                                        .bold()
+                                VStack {
                                     
-                                    Spacer()
-                                }
-                                
-                                HStack {
-                                    Text("16.0-20.5")
-                                        .foregroundStyle(.black)
+                                    HStack {
+                                        Text("Climate")
+                                            .foregroundStyle(.black)
+                                            .bold()
+                                        
+                                        Spacer()
+                                    }
                                     
-                                    Spacer()
+                                    HStack {
+                                        Text("16.0-20.5")
+                                            .foregroundStyle(.black)
+                                        
+                                        Spacer()
+                                    }
                                 }
                             }
-                        }
-                        .padding(7)
-                        .background(.white)
-                        .cornerRadius(25.0)
-                        .padding(.horizontal, 10)
-                        
-                        
-                        HStack {
-                            Image(systemName: "basketball")
-                                .foregroundStyle(.black)
-                                .font(.system(size: 25))
-                                .padding(.horizontal, 5)
-                            
-                            VStack {
-                                
-                                HStack {
-                                    Text("Climate")
-                                        .foregroundStyle(.black)
-                                        .bold()
-                                    
-                                    Spacer()
-                                }
-                                
-                                HStack {
-                                    Text("16.0-20.5")
-                                        .foregroundStyle(.black)
-                                    
-                                    Spacer()
-                                }
-                            }
-                        }
-                        .padding(7)
-                        .background(.white)
-                        .cornerRadius(25.0)
-                        
-                        
-                    }
-                }
-
-                Spacer()
-
-                
-            }
-            .navigationTitle("My Home")
-            .toolbar {
-                ToolbarItem {
-                    Button(action: { }) {
-                        Image(systemName: "waveform")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                    }
-                }
-                
-                ToolbarItem {
-                    Button(action: { }) {
-                        Image(systemName: "plus")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
+                            .padding(7)
+                            .background(.white)
+                            .cornerRadius(25.0)
                             .padding(.horizontal, 10)
+                            
+                            
+                            HStack {
+                                Image(systemName: "basketball")
+                                    .foregroundStyle(.black)
+                                    .font(.system(size: 25))
+                                    .padding(.horizontal, 5)
+                                
+                                VStack {
+                                    
+                                    HStack {
+                                        Text("Climate")
+                                            .foregroundStyle(.black)
+                                            .bold()
+                                        
+                                        Spacer()
+                                    }
+                                    
+                                    HStack {
+                                        Text("16.0-20.5")
+                                            .foregroundStyle(.black)
+                                        
+                                        Spacer()
+                                    }
+                                }
+                            }
+                            .padding(7)
+                            .background(.white)
+                            .cornerRadius(25.0)
+                            
+                            
+                        }
+                    }
+
+                    Spacer()
+
+                    
+                }
+                .navigationTitle("My Home")
+                .toolbar {
+                    ToolbarItem {
+                        Button(action: { }) {
+                            Image(systemName: "waveform")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                        }
+                    }
+                    
+                    ToolbarItem {
+                        Button(action: { }) {
+                            Image(systemName: "plus")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 10)
+                        }
+                    }
+                    
+                    ToolbarItem {
+                        Button(action: { }) {
+                            Image(systemName: "ellipsis.circle")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                        }
                     }
                 }
+                .tint(.blue)
                 
-                ToolbarItem {
-                    Button(action: { }) {
-                        Image(systemName: "ellipsis.circle")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                    }
-                }
             }
-            .tint(.blue)
-            
         }
     }
 }
