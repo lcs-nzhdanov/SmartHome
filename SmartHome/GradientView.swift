@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct GradientView: View {
+    let firstGradientColors = Gradient(colors: [Color.blue, Color.yellow])
     
     var body: some View {
         
         ZStack {
             //Background
             LinearGradient(
-                gradient: Gradient(colors: [Color.red, Color.blue]),
+                gradient: firstGradientColors,
                 startPoint: .leading,
                 endPoint: .trailing
             )
